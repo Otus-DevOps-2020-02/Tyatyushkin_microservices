@@ -1,0 +1,31 @@
+{
+    "variables": {
+        "ID": null,
+        "SIF": null,
+        "MT": "n1-standard-1"
+    },
+    "builders": [
+        {
+            "type": "googlecompute",
+            "project_id": "{{user `ID`}}",
+            "image_name": "docker-base-{{timestamp}}",
+            "image_family": "docker-base",
+            "source_image_family": "{{user `SIF`}}",
+            "zone": "europe-west1-b",
+            "ssh_username": "masterplan",
+            "machine_type": "{{user `MT`}}",
+            "region": "europe-west1",
+            "image_description": "docker-base server",
+            "disk_type": "pd-standard",
+            "disk_size": "10",
+            "network": "default",
+            "tags": "docker-server"
+        }
+    ],
+    "provisioners": [
+        {
+            "type": "ansible",
+            "playbook_file": "ansible/install_docker.yml"
+        }
+    ]
+}

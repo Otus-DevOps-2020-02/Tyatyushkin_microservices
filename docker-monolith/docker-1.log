@@ -1,0 +1,5 @@
+REPOSITORY                   TAG                 IMAGE ID            CREATED              SIZE
+masterplan/ubuntu-tmp-file   latest              afd40b885a52        About a minute ago   125MB
+ubuntu                       16.04               005d2078bdfa        2 weeks ago          125MB
+tyatyushkin/cheers2019       latest              7c1e079e4dc1        2 months ago         4.01MB
+hello-world                  latest              bf756fb1ae65        4 months ago         13.3kB
