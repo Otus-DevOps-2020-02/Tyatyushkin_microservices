@@ -6,4 +6,5 @@ services:
   comment:
     command: puma --debug -w 2
   post:
-    command: python3 post_app_01.py
+    volumes:
+    - post-py:/app1
