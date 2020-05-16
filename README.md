@@ -38,7 +38,7 @@ docker-compose -p project-name up -d
 3. Для изменения исходного кода без пересборки образов мы можем использовать подключаемые **volume**
 ```
     volumes:
-      - /home/docker-user/post-py:/app
+      - /home/masterplan/newapp:/app
 ```
 4. Для запуска файла следующих команд: *docker-compose -f docker-compose.yml -f docker-compose.override.yml up -d*
 
